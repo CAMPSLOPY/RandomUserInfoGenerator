@@ -36,5 +36,5 @@ function addData(obj) {
   // push()
   data.push(obj);
 }
-console.log(data);
+
 getRandomUser();

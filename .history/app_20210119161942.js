@@ -32,8 +32,8 @@ async function getRandomUser() {
 // add new obj to data array
 
 function addData(obj) {
-  // we are going to push the newUser which is an obj into this function using
-  // push()
+    // we are going to push the newUser which is an obj into this function using 
+    
   data.push(obj);
 }
 console.log(data);
