@@ -9,9 +9,6 @@ const calculateWealthTotal = document.getElementById("calculate-wealth");
 // this is where the data for the people and their money will be stored
 let data = [];
 
-getRandomUser();
-getRandomUser();
-getRandomUser();
 // Create the functionality for the APP
 // fetch random user and add  money
 // async is a better way of calling the fetch API

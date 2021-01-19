@@ -10,8 +10,6 @@ const calculateWealthTotal = document.getElementById("calculate-wealth");
 let data = [];
 
 getRandomUser();
-getRandomUser();
-getRandomUser();
 // Create the functionality for the APP
 // fetch random user and add  money
 // async is a better way of calling the fetch API
