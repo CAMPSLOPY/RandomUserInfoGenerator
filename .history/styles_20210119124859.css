@@ -66,13 +66,8 @@
     display: flex;
     justify-content: space-between;
     font-weight: 300;
-    margin: 20px 0 0;
+    margin: 20 0 20px;
     background-color: white;
   }
   
-  .person{
-    display: flex ;
-    justify-content: space-between;
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
+  
