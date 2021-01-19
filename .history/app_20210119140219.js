@@ -10,5 +10,3 @@ const calculateWealthTotal = document.getElementById("calculate-wealth");
 let data = [];
 
 // Create the functionality for the APP
-// fetch random user and add  money 
- 

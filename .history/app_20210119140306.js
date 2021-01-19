@@ -11,4 +11,3 @@ let data = [];
 
 // Create the functionality for the APP
 // fetch random user and add  money 
- 
