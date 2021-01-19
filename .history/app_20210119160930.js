@@ -16,11 +16,9 @@ async function getRandomUser() {
   const res = await fetch("https://randomuser.me/api/1.3/");
   const data = await res.json();
 
-  console.log(data);
-  //   we created the user const to attach the data to the results of the called API
+//   
   const user = data.results[0];
 
-//   we now access the API results by creating a new user
   const newUser = {
     name: `${user.name.first} ${user.name.last}`,
     money: Math.floor(Math.random() * 1000000),

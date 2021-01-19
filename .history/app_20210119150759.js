@@ -17,22 +17,7 @@ async function getRandomUser() {
   const data = await res.json();
 
   console.log(data);
-  //   we created the user const to attach the data to the results of the called API
-  const user = data.results[0];
-
-//   we now access the API results by creating a new user
-  const newUser = {
-    name: `${user.name.first} ${user.name.last}`,
-    money: Math.floor(Math.random() * 1000000),
-  };
-  //   we are adding the newUser object to a function called addData
-  addData(newUser);
 }
-
-// add new obj to data array
-
-function addData(obj) {
-  data.push(obj);
-}
-
+getRandomUser();
+getRandomUser();
 getRandomUser();
