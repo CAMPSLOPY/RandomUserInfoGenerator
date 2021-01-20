@@ -99,7 +99,7 @@ function totalWealthCalculator() {
   wealthEl.innerHTML = `<h3>Total Wealth: <strong>${formatMoney(
     wealth
   )}</strong> </h3>`;
-  console.log(wealth);
+  console.log
   main.appendChild(wealthEl);
 }
 // event Listeners

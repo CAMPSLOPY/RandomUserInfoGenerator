@@ -96,11 +96,7 @@ function totalWealthCalculator() {
   }, 0);
 
   const wealthEl = document.createElement("div");
-  wealthEl.innerHTML = `<h3>Total Wealth: <strong>${formatMoney(
-    wealth
-  )}</strong> </h3>`;
-  console.log(wealth);
-  main.appendChild(wealthEl);
+  wealthEl.innerHTML = 
 }
 // event Listeners
 addUserBtn.addEventListener("click", getRandomUser);
