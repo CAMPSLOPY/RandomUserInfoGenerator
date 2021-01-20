@@ -64,11 +64,7 @@ function formatMoney(number) {
 // this will double everyones money when the double
 //  money btn is clicked
 function doubleMoney() {
-  // will get the initial data and map through it 
-  data = data.map(user =>{
-    return {...user, money: user.money *2}
-  });
-  updateDOM();
+  // 
 }
 
 // event Listeners

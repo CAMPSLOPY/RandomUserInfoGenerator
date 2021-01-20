@@ -66,9 +66,9 @@ function formatMoney(number) {
 function doubleMoney() {
   // will get the initial data and map through it 
   data = data.map(user =>{
-    return {...user, money: user.money *2}
+    return (...user, money: user.money *2)
   });
-  updateDOM();
+  update
 }
 
 // event Listeners
