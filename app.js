@@ -67,8 +67,6 @@ function doubleMoney() {
   // will get the initial data and map through it
   data = data.map((user) => {
     return { ...user, money: user.money * 2 };
-<<<<<<< HEAD
-=======
   });
   updateDOM();
 }
@@ -76,20 +74,9 @@ function doubleMoney() {
 function sortByRichest() {
   data.sort(function (a, b) {
     return b.money - a.money;
->>>>>>> 6d5cd211c646c3f0fb128e349f3eda2c077bd798
   });
   updateDOM();
 }
-
-function sortByRichest() {
-  // data.sort(function (a, b) {
-  //   return b.money - a.money;
-  // });
-  // or
-  data.sort((a, b) => b.money - a.money);
-  updateDOM();
-}
-
 // event Listeners
 
 addUserBtn.addEventListener("click", getRandomUser);
