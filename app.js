@@ -64,10 +64,19 @@ function formatMoney(number) {
 // this will double everyones money when the double
 //  money btn is clicked
 function doubleMoney() {
-  // will get the initial data and map through it 
-  data = data.map(user =>{
-    return {...user, money: user.money *2}
+  // will get the initial data and map through it
+  data = data.map((user) => {
+    return { ...user, money: user.money * 2 };
   });
+  updateDOM();
+}
+
+function sortByRichest() {
+  // data.sort(function (a, b) {
+  //   return b.money - a.money;
+  // });
+  // or
+  data.sort((a, b) => b.money - a.money);
   updateDOM();
 }
 
@@ -75,3 +84,4 @@ function doubleMoney() {
 
 addUserBtn.addEventListener("click", getRandomUser);
 doubleBtn.addEventListener("click", doubleMoney);
+sortBtn.addEventListener("click", sortByRichest);
