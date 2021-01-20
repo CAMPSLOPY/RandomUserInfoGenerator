@@ -72,9 +72,7 @@ function doubleMoney() {
 }
 
 function sortByRichest() {
-  data.sort(function (a, b) {
-    return b.money - a.money;
-  });
+  data
   updateDOM();
 }
 

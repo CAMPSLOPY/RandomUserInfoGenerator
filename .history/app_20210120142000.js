@@ -71,10 +71,7 @@ function doubleMoney() {
   updateDOM();
 }
 
-function sortByRichest() {
-  data.sort(function (a, b) {
-    return b.money - a.money;
-  });
+function sortByRiches() {
   updateDOM();
 }
 
@@ -82,4 +79,4 @@ function sortByRichest() {
 
 addUserBtn.addEventListener("click", getRandomUser);
 doubleBtn.addEventListener("click", doubleMoney);
-sortBtn.addEventListener("click", sortByRichest);
+sortBtn.addEventListener("click", sortByRiches);
