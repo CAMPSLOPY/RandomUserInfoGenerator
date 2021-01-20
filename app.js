@@ -2,7 +2,7 @@
 const main = document.getElementById("main");
 const addUserBtn = document.getElementById("add-user");
 const doubleBtn = document.getElementById("double");
-const showMillie = document.getElementById("show-millionaires");
+const showMillieBtn = document.getElementById("show-millionaires");
 const sortBtn = document.getElementById("sort");
 const calculateWealthTotal = document.getElementById("calculate-wealth");
 
@@ -63,6 +63,7 @@ function formatMoney(number) {
 
 // this will double everyones money when the double
 //  money btn is clicked
+// created with the map() method
 function doubleMoney() {
   // will get the initial data and map through it
   data = data.map((user) => {
@@ -78,7 +79,17 @@ function sortByRichest() {
   });
   updateDOM();
 }
+
+// filter only millionaires
+function filterByRichest() {
+  data = data.filter(function (user) {
+    return user.money > 1000000;
+  });
+
+  updateDOM();
+}
 // event Listeners
 addUserBtn.addEventListener("click", getRandomUser);
 doubleBtn.addEventListener("click", doubleMoney);
 sortBtn.addEventListener("click", sortByRichest);
+showMillieBtn.addEventListener("click", filterByRichest);
