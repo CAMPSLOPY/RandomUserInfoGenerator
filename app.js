@@ -70,7 +70,8 @@ function doubleMoney() {
   });
   updateDOM();
 }
-
+// here we use the SORT() to arrange the
+// order from ascending to descending
 function sortByRichest() {
   data.sort(function (a, b) {
     return b.money - a.money;
@@ -78,7 +79,6 @@ function sortByRichest() {
   updateDOM();
 }
 // event Listeners
-
 addUserBtn.addEventListener("click", getRandomUser);
 doubleBtn.addEventListener("click", doubleMoney);
 sortBtn.addEventListener("click", sortByRichest);
