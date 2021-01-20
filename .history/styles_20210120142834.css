@@ -42,14 +42,11 @@ button {
   font-weight: bold;
   font-size: 14px;
 }
-button:hover {
+/* button:hover {
   background-color: rgba(0, 0, 0, 0.603);
   color: #fff;
   transition: 0.5s;
-}
-button:focus{
-  outline: none;
-}
+} */
 
 main {
   flex: 1;

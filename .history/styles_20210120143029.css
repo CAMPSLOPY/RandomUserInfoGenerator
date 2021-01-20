@@ -47,9 +47,7 @@ button:hover {
   color: #fff;
   transition: 0.5s;
 }
-button:focus{
-  outline: none;
-}
+button:focus
 
 main {
   flex: 1;
