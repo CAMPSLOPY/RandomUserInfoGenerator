@@ -3,7 +3,7 @@ const main = document.getElementById("main");
 const addUserBtn = document.getElementById("add-user");
 const doubleBtn = document.getElementById("double");
 const showMillie = document.getElementById("show-millionaires");
-const sortBtn = document.getElementById("sort");
+const sort = document.getElementById("sort");
 const calculateWealthTotal = document.getElementById("calculate-wealth");
 
 // this is where the data for the people and their money will be stored

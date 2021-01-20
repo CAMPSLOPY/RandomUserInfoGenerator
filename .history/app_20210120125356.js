@@ -1,9 +1,9 @@
 // All the Variables we will be working with
 const main = document.getElementById("main");
-const addUserBtn = document.getElementById("add-user");
-const doubleBtn = document.getElementById("double");
+const addUser = document.getElementById("add-user");
+const double = document.getElementById("double");
 const showMillie = document.getElementById("show-millionaires");
-const sortBtn = document.getElementById("sort");
+const sort = document.getElementById("sort");
 const calculateWealthTotal = document.getElementById("calculate-wealth");
 
 // this is where the data for the people and their money will be stored
@@ -45,20 +45,7 @@ function updateDOM(providedData = data) {
   // WE HAVE TO CLEAR THE MAIN DIV FIRST
   main.innerHTML = "<h2><strong>Person</strong> Wealth</h2>";
 
-  providedData.forEach((item) => {
-    // now we have to create a new div element inside the main section in our HTML
-    const element = document.createElement("div");
-    element.classList.add("person");
-    element.innerHTML = `<strong> ${item.name}</strong> ${formatMoney(
-      item.money
-    )}`;
-    main.appendChild(element);
-  });
-}
-
-// we need to format the numbers so that they can come in a money format
-function formatMoney(number) {
-  return '$' + number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,");
+  providedData.forEach(item =>)
 }
 getRandomUser();
 getRandomUser();
