@@ -91,12 +91,13 @@ function filterByRichest() {
 
 // calculate the total wealth with REDUCE()
 function totalWealthCalculator() {
-  const wealth = data.reduce((acc, user) => (acc += user.money), 0);
+  const wealth = data.reduce(function (acc, user) {
+    acc += user.money;
+  }, 0);
 
   const wealthEl = document.createElement("div");
   wealthEl.innerHTML = `<h3>Total Wealth: <strong>${formatMoney(
-    wealth
-  )}</strong> </h3>`;
+    wealth)}</strong> </h3>`;
   main.appendChild(wealthEl);
 }
 // event Listeners
